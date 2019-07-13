@@ -1,0 +1,66 @@
+====================dbRouter============================== //각 테이블 별로 모두 불러옴
+ - database에 저장된 모든 목록
+
+localhost:3000/dbRouter/building
+ : BUILDING(id, title, lat, log)
+
+localhost:3000/dbRouter/employee
+ : EMPLOYEE(id, detailOrgan, position, name, telephone, officeId)
+
+localhost:3000/dbRouter/filter
+ : FILTER(id, title, marker)
+
+localhost:3000/dbRouter/office
+ : OFFICE(id, title, roomId, buildingId, filterId, isMain)
+
+====================infoRouter========================= //DB에서 여러 항목 불러왔을 때, 해당 테이블에서 특정한 하나에 대한 정보만 조회, 빌딩 아이디 11번인 것에 대한 정보만 불러오기와 같이
+ - 특정 정보
+
+localhost:3000/infoRouter/building/[buildingId]
+ : BUILDING(id, title, lat, log)
+
+localhost:3000/infoRouter/filter/[filterId]
+ : FILTER(id, title, marker)
+
+localhost:3000/infoRouter/employee/[employeeId]
+ : EMPLOYEE(id, name, detailOrgan, position, mainWork, telephone, email)
+
+localhost:3000/infoRouter/office/[officeId]
+ : OFFICE(id, title, buildingId, floorId, filterId, isMain)
+
+//휴게실 카페 식당 편의점만 필터링
+===================listRouter========================= //검색
+//main 안 붙은 건 건물 안 모든 office 정보 반환
+
+//지도에서 건물(인문대학 등)) 터치했을 때 (main 붙은 것)
+localhost:3000/mainOfficeListByBuilding/[buildingId]
+ : OFFICE(id, title, buildingId, roomId, filterId)
+  → 특정 building 내부의 isMain=true인 office 목록, roomId로 정렬. 빌딩 아이디 주소로 넣으면 해당 건물 안의 ismain true인 오피스 목록.
+
+//단과대(감사)가 있을 때 그 안에 어떤 게 있는 지 다 뜨게)
+:3000/mainOfficeListByBuilding/[buildingId]
+ : OFFICE(id, title, buildingId, roomId)
+  → 특정 building 내부의 모든 office 목록
+
+//편의점만 찾고 싶다면 - 해당 아이디 이용. 필터 눌렀을 때 속하는 오피스 목록 관련
+//필터로 검색한 목록 모두 출력
+:3000/officeListByFilter/[filterId]
+ : OFFICE(id, title, buildingId, roomId)
+  → filterId별 office 목록
+
+====================searchRouter======================= //검색 기능
+
+//t n d m로 검색 가능
+localhost:3000/searchRouter/phonebook/[key]
+ : telephone, name, detailOrgan, mainWork에 key가 포함된 직원 검색 목록. key가 전화번호부 검색어
+   EMPLOYEE(id, detailOrgan, position, name, telephone, email, mainWork)
+
+//오피스 이름으로 검색, 한글 숫자 가능 //메인 화면 검색창의 검색어가 key. 검색 결과로 뜨는 부서 터치했을 때에는 - info 라우터 뒤 info라우터 오피스의 아이디를 넣으면 될 것!
+localhost:3000/searchRouter/map/[key]
+ : title에 key가 포함된 부서 검색 목록
+   OFFICE(id, title, roomId, buildingId)
+
+
+
+
+() 안에는 값 삽입!

@@ -1,0 +1,14 @@
+//
+//  DetailDepartmentController.swift
+//  CampusMap
+//
+//  Created by 손원희 on 02/04/2019.
+//  Copyright © 2019 iamwhs. All rights reserved.
+//
+
+import UIKit
+import Foundation
+
+class DetailDepartmentController: UIViewController {
+    
+}

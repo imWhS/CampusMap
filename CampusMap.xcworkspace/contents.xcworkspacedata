@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CBuildings.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/son-wonhui/OneDrive - inu.ac.kr/Xcode projects/CampusMap/CampusMap.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CampusMap.xcodeproj">
+   </FileRef>
+</Workspace>
