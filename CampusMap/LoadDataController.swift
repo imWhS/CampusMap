@@ -11,93 +11,78 @@ import UIKit
 import Network
 
 class LoadDataController : UIViewController {
-    
     @IBOutlet var lSignal: UIActivityIndicatorView!
-    
+
     var buildingItems: [CBuildings] = []
     var officeItems: [COffices] = []
-    
     let sharedDatas = UIApplication.shared.delegate as? AppDelegate
-    
     
     override var prefersStatusBarHidden: Bool {
         return true
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
-    
-    func chkReachablility() {
-        let monitor = NWPathMonitor()
-        monitor.pathUpdateHandler = { path in
-            if path.status == .satisfied {
-                print("Connected network!")
-            }
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("check network reachability")
-        chkReachablility()
-        
         lSignal.startAnimating()
+        
         let model = NetworkModel(self)
+        
         model.getBuildings()
         model.getOffices()
     }
     
     func divideBuildings() {
         for item in buildingItems {
-            if !(((UIApplication.shared.delegate as? AppDelegate)?.buildingsId.contains(item.id!))!) {
-                (UIApplication.shared.delegate as? AppDelegate)?.buildingsId.append(item.id!)
-            }
+            /*
+             if !(((UIApplication.shared.delegate as? AppDelegate)?.buildingsId.contains(item.id!))!) {
+             (UIApplication.shared.delegate as? AppDelegate)?.buildingsId.append(item.id!)
+             }
+            */
             
-            if !(((UIApplication.shared.delegate as? AppDelegate)?.buildingsTitle.contains(item.title!))!) {
-                (UIApplication.shared.delegate as? AppDelegate)?.buildingsTitle.append(item.title!)
+            if !((sharedDatas?.buildingsId.contains(item.id!))!) {
+                sharedDatas?.buildingsId.append(item.id!)
             }
-        
-            (UIApplication.shared.delegate as? AppDelegate)?.buildingsLat.append(item.lat!)
-            (UIApplication.shared.delegate as? AppDelegate)?.buildingsLog.append(item.log!)
+            if !((sharedDatas?.buildingsTitle.contains(item.title!))!) {
+                sharedDatas?.buildingsTitle.append(item.title!)
+            }
+            sharedDatas?.buildingsLat.append(item.lat!)
+            sharedDatas?.buildingsLog.append(item.log!)
         }
     }
-    //let obj = CBuildings(id: id, title: title, buildingId: buildingId, floorId: floorId, roomId: roomId, filterId: filterId, isMain: isMain)
+    
     func divideOffices() {
         for item in officeItems {
-            if !(((UIApplication.shared.delegate as? AppDelegate)?.officesId.contains(item.id!))!) {
-                (UIApplication.shared.delegate as? AppDelegate)?.officesId.append(item.id!)
+            if !((sharedDatas?.officesId.contains(item.id!))!) {
+                sharedDatas?.officesId.append(item.id!)
             }
             
-            if !(((UIApplication.shared.delegate as? AppDelegate)?.officesTitle.contains(item.title!))!) {
-                (UIApplication.shared.delegate as? AppDelegate)?.officesTitle.append(item.title!)
+            if !((sharedDatas?.officesTitle.contains(item.title!))!) {
+                sharedDatas?.officesTitle.append(item.title!)
             }
             
-            if !(((UIApplication.shared.delegate as? AppDelegate)?.officesBuildingId.contains(item.buildingId!))!) {
-                (UIApplication.shared.delegate as? AppDelegate)?.officesBuildingId.append(item.buildingId!)
+            if !((sharedDatas?.officesBuildingId.contains(item.buildingId!))!) {
+                sharedDatas?.officesBuildingId.append(item.buildingId!)
             }
             
-            if !(((UIApplication.shared.delegate as? AppDelegate)?.officesFloorId.contains(item.floorId!))!) {
-                (UIApplication.shared.delegate as? AppDelegate)?.officesFloorId.append(item.floorId!)
+            if !((sharedDatas?.officesFloorId.contains(item.floorId!))!) {
+                sharedDatas?.officesFloorId.append(item.floorId!)
             }
             
-            if !(((UIApplication.shared.delegate as? AppDelegate)?.officesRoomId.contains(item.roomId!))!) {
-                (UIApplication.shared.delegate as? AppDelegate)?.officesRoomId.append(item.roomId!)
+            if !((sharedDatas?.officesRoomId.contains(item.roomId!))!) {
+                sharedDatas?.officesRoomId.append(item.roomId!)
             }
             
-            if !(((UIApplication.shared.delegate as? AppDelegate)?.officesFilterId.contains(item.filterId!))!) {
-                (UIApplication.shared.delegate as? AppDelegate)?.officesFilterId.append(item.filterId!)
+            if !((sharedDatas?.officesFilterId.contains(item.filterId!))!) {
+                sharedDatas?.officesFilterId.append(item.filterId!)
             }
             
-            if !(((UIApplication.shared.delegate as? AppDelegate)?.officesIsMain.contains(item.isMain!))!) {
-                (UIApplication.shared.delegate as? AppDelegate)?.officesIsMain.append(item.isMain!)
+            if !((sharedDatas?.officesIsMain.contains(item.isMain!))!) {
+                sharedDatas?.officesIsMain.append(item.isMain!)
             }
         }
     }
 }
 
-//"id":1,"title":"대학본부","lat":"37.3767741","log":"126.63464720000002"
 extension LoadDataController: NetworkCallback {
     func networkSuc(resultdata: Any, code: String) {
         if(code == "buildings") {

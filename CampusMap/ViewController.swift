@@ -13,9 +13,9 @@ class ViewController: UIViewController, MTMapViewDelegate {
     var mapView: MTMapView?
     @IBOutlet var btnFilter: Floaty!
     
-    @IBOutlet var DataLoadView: UIView!
-    
-    //Stage
+    /*
+     Stage items
+    */
     @IBOutlet var stageBG: UIView!
     @IBOutlet var imgStageLogo: UIImageView!
     @IBOutlet var textViewComment: UITextView!
@@ -32,7 +32,6 @@ class ViewController: UIViewController, MTMapViewDelegate {
     @IBOutlet var labelMarkerComment: UITextView!
     @IBOutlet var labelMyPos: UILabel!
     @IBOutlet var labelPhoneBook: UILabel!
-    
     
     @IBOutlet var btnMyPos: UIButton!
     @IBOutlet var btnCall: UIButton!

@@ -5,12 +5,9 @@
       location = "group:CBuildings.swift">
    </FileRef>
    <FileRef
-      location = "group:/Users/son-wonhui/OneDrive - inu.ac.kr/Xcode projects/CampusMap/CampusMap.xcodeproj">
+      location = "group:CampusMap.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:CampusMap.xcodeproj">
    </FileRef>
 </Workspace>
