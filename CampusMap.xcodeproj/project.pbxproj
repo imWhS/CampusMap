@@ -63,12 +63,12 @@
 		7B07AD982212A9DF000AABE4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		7B07AD9A2212A9E7000AABE4 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		7B07AD9C2212A9F2000AABE4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		7B07AD9E2212AB5C000AABE4 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		7B07ADAD2212AE36000AABE4 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DaumMap.framework; path = DaumMap.embeddedframework/DaumMap.framework; sourceTree = "<group>"; };
 		7B07ADB02212EA17000AABE4 /* NanumSquareRoundB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundB.ttf; sourceTree = "<group>"; };
 		7B07ADC22214073B000AABE4 /* PhonebookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonebookController.swift; sourceTree = "<group>"; };
 		7B1651FC223E225800F017A5 /* DepartmentVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentVO.swift; sourceTree = "<group>"; };
 		7B21E67C2253640B005C0572 /* DetailDepartmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDepartmentController.swift; sourceTree = "<group>"; };
+		7B226D162455758D000F2479 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = SOURCE_ROOT; };
 		7B2374902238D844005FA4C8 /* Source */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Source; path = Alamofire/Source; sourceTree = SOURCE_ROOT; };
 		7B2374922238D9E2005FA4C8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B265FE02214426E00E540EE /* PeopleVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleVO.swift; sourceTree = "<group>"; };
@@ -115,7 +115,6 @@
 		7B07AD2A2212A7E9000AABE4 = {
 			isa = PBXGroup;
 			children = (
-				7B07AD9E2212AB5C000AABE4 /* BridgingHeader.h */,
 				7B07AD8D2212A97C000AABE4 /* DaumMap.embeddedframework */,
 				7B07AD352212A7E9000AABE4 /* CampusMap */,
 				7B07AD342212A7E9000AABE4 /* Products */,
@@ -149,6 +148,7 @@
 				7B9900DE2292A08500FF0A6D /* COffices.swift */,
 				7B21E67C2253640B005C0572 /* DetailDepartmentController.swift */,
 				7B265FE22216D8A500E540EE /* DepartmentController.swift */,
+				7B226D162455758D000F2479 /* BridgingHeader.h */,
 				7BEB8756225496B400D24DA9 /* NetworkModel.swift */,
 				7B2374902238D844005FA4C8 /* Source */,
 				7B07AD3D2212A7EA000AABE4 /* Assets.xcassets */,
@@ -532,7 +532,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ENABLE_BATCH_MODE = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/son-wonhui/OneDrive - inu.ac.kr/Xcode projects/CampusMap/BridgingHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/son-wonhui/OneDrive - inu.ac.kr/Developments/CampusMap/BridgingHeader.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -565,7 +565,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ENABLE_BATCH_MODE = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/son-wonhui/OneDrive - inu.ac.kr/Xcode projects/CampusMap/BridgingHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/son-wonhui/OneDrive - inu.ac.kr/Developments/CampusMap/BridgingHeader.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

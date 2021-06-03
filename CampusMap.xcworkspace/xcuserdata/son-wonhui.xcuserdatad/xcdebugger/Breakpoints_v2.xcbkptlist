@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3B8FD19E-EDC7-4E76-968A-DD577392A6A1"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5F85AEB9-BAC7-4209-A537-DE76ED927311"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CampusMap/LoadDataController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "divideOffices()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "42818720-5879-4F1B-AE91-BA559CDA24F7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CampusMap/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "dataset"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "42818720-5879-4F1B-AE91-BA559CDA24F7 - ce83ada64393c4b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CampusMap.AppDelegate.dataset.getter : Swift.Array&lt;(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String)&gt;"
+                  moduleName = "CampusMap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/son-wonhui/OneDrive%20-%20inu.ac.kr/Developments/CampusMap/CampusMap/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "42818720-5879-4F1B-AE91-BA559CDA24F7 - e8c621f65214d083"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CampusMap.AppDelegate.dataset.setter : Swift.Array&lt;(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String)&gt;"
+                  moduleName = "CampusMap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/son-wonhui/OneDrive%20-%20inu.ac.kr/Developments/CampusMap/CampusMap/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "42818720-5879-4F1B-AE91-BA559CDA24F7 - 7283e4ba4c17ca87"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CampusMap.AppDelegate.dataset.modify : Swift.Array&lt;(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String)&gt;"
+                  moduleName = "CampusMap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/son-wonhui/OneDrive%20-%20inu.ac.kr/Developments/CampusMap/CampusMap/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "42818720-5879-4F1B-AE91-BA559CDA24F7 - eb77c1e4368bc4f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CampusMap.AppDelegate.dataset.modify : Swift.Array&lt;(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String)&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CampusMap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/son-wonhui/OneDrive%20-%20inu.ac.kr/Developments/CampusMap/CampusMap/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "42818720-5879-4F1B-AE91-BA559CDA24F7 - 7e179c71afd78d1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CampusMap.AppDelegate.init() -&gt; CampusMap.AppDelegate"
+                  moduleName = "CampusMap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/son-wonhui/OneDrive%20-%20inu.ac.kr/Developments/CampusMap/CampusMap/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "392">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

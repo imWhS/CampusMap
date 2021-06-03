@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8w7-eb-xkz">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlg-c2-O5Y">
-                                <rect key="frame" x="11" y="23" width="353" height="49"/>
+                                <rect key="frame" x="11" y="3" width="353" height="49"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFO-eZ-tEx">
                                         <rect key="frame" x="11" y="12" width="15.5" height="26.5"/>
@@ -38,7 +36,6 @@
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="소속 또는 이름을 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M5N-Of-ebg">
                                         <rect key="frame" x="91" y="15" width="312" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="NanumSquareRoundB" family="NanumSquareRound" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -56,20 +53,20 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Omh-3A-pLZ">
-                                <rect key="frame" x="0.0" y="77" width="375" height="3"/>
+                                <rect key="frame" x="0.0" y="57" width="375" height="3"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="gJ3-nw-ADi"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dsp-Ez-d06">
-                                <rect key="frame" x="0.0" y="80" width="375" height="587"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="587"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="587" id="Ame-cI-mKR"/>
                                 </constraints>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="psD-0t-Hv9">
-                                    <rect key="frame" x="0.0" y="90" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="118" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
@@ -78,7 +75,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cOg-zh-4XJ" id="BUP-CJ-sJe">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="감사" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qni-hH-6Qm">
@@ -137,11 +134,11 @@
             <objects>
                 <viewController id="TWN-bk-KvZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VWn-b1-LjK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LzE-qP-TWP">
-                                <rect key="frame" x="11" y="23" width="353" height="49"/>
+                                <rect key="frame" x="11" y="3" width="353" height="49"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tN-l4-xyX">
                                         <rect key="frame" x="11" y="12" width="15.5" height="26.5"/>
@@ -180,7 +177,7 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IVr-2C-u7U">
-                                <rect key="frame" x="0.0" y="77" width="375" height="3"/>
+                                <rect key="frame" x="0.0" y="57" width="375" height="3"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="6P1-gi-vAs"/>
@@ -195,7 +192,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HfC-S8-d2V" id="agd-3q-8Xs">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="국어국문학과  l  인문학연구소장" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0p-W4-1UU">
@@ -339,7 +336,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84T-23-Rhx">
-                                <rect key="frame" x="11" y="28" width="353" height="49"/>
+                                <rect key="frame" x="11" y="8" width="353" height="49"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_small" translatesAutoresizingMaskIntoConstraints="NO" id="j0K-od-aXf">
                                         <rect key="frame" x="24" y="19" width="48.5" height="10.5"/>
@@ -376,7 +373,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="검색 영역" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9St-wB-SkB">
-                                <rect key="frame" x="267" y="85" width="97.5" height="21"/>
+                                <rect key="frame" x="267" y="65" width="97.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="NMz-0W-Wl6"/>
                                     <constraint firstAttribute="width" constant="97.5" id="usn-5q-2S2"/>
@@ -396,14 +393,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Mv0-lx-u6j">
-                                <rect key="frame" x="26" y="92" width="161.5" height="49.5"/>
+                                <rect key="frame" x="26" y="72" width="161.5" height="49.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="161.5" id="Hnl-Tg-zpY"/>
                                     <constraint firstAttribute="height" constant="49.5" id="rcn-A4-tME"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nI-xe-rxb">
-                                <rect key="frame" x="21" y="154" width="282" height="156"/>
+                                <rect key="frame" x="21" y="134" width="282" height="156"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="156" id="6bO-Wx-4KQ"/>
                                     <constraint firstAttribute="width" constant="282" id="WPF-uV-ohc"/>
@@ -416,7 +413,7 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
 길잡이가 되어드릴 거예요!  </string>
                                         <attributes>
                                             <color key="NSColor" red="0.55294117647058827" green="0.78823529411764703" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="9" name="NanumSquareRoundB"/>
+                                            <font key="NSFont" metaFont="miniSystem"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -436,28 +433,28 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLocation" translatesAutoresizingMaskIntoConstraints="NO" id="GHN-Ob-DOo">
-                                <rect key="frame" x="38" y="230.5" width="23" height="29"/>
+                                <rect key="frame" x="38" y="210.5" width="23" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="dHN-us-rGQ"/>
                                     <constraint firstAttribute="width" constant="23" id="wte-9A-TTI"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icMylocation" translatesAutoresizingMaskIntoConstraints="NO" id="Dci-V9-ayf">
-                                <rect key="frame" x="38" y="272" width="23" height="28.5"/>
+                                <rect key="frame" x="38" y="252" width="23" height="28.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28.5" id="2wK-2T-keK"/>
                                     <constraint firstAttribute="width" constant="23" id="H2c-mP-dyr"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnMsg" translatesAutoresizingMaskIntoConstraints="NO" id="b7d-al-Y18">
-                                <rect key="frame" x="31.5" y="314" width="35.5" height="35.5"/>
+                                <rect key="frame" x="31.5" y="294" width="35.5" height="35.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35.5" id="7ie-3x-Ki1"/>
                                     <constraint firstAttribute="height" constant="35.5" id="HgY-Zj-k9g"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장소 표시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yz9-Nj-qrf">
-                                <rect key="frame" x="80" y="240" width="80" height="14"/>
+                                <rect key="frame" x="80" y="220" width="80" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="14" id="J7M-N4-jd5"/>
                                     <constraint firstAttribute="width" constant="80" id="NBI-Bn-BDY"/>
@@ -467,7 +464,7 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 위치" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BlS-9B-yqA">
-                                <rect key="frame" x="80" y="275" width="59" height="17"/>
+                                <rect key="frame" x="80" y="255" width="59" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="59" id="Uk6-Ji-GeU"/>
                                     <constraint firstAttribute="height" constant="17" id="fvs-Je-AWb"/>
@@ -477,7 +474,7 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="문의사항" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edg-Vm-j23">
-                                <rect key="frame" x="80" y="311" width="55" height="17"/>
+                                <rect key="frame" x="80" y="291" width="55" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="55" id="69v-dk-lGh"/>
                                     <constraint firstAttribute="height" constant="17" id="Neb-Y2-y9k"/>
@@ -487,7 +484,7 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마커 필터" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awL-y6-r98">
-                                <rect key="frame" x="80" y="396" width="59" height="17"/>
+                                <rect key="frame" x="80" y="376" width="59" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="59" id="MKu-Ra-fv4"/>
                                     <constraint firstAttribute="height" constant="17" id="v1J-O6-BRS"/>
@@ -497,7 +494,7 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfJ-rq-2Ry">
-                                <rect key="frame" x="76" y="328" width="136" height="72"/>
+                                <rect key="frame" x="76" y="308" width="136" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="136" id="Pgr-d1-DA0"/>
                                     <constraint firstAttribute="height" constant="72" id="zZ7-Qq-GaY"/>
@@ -509,14 +506,14 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
 </string>
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="9" name="NanumSquareRoundB"/>
+                                            <font key="NSFont" metaFont="miniSystem"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="필요 없이 바로 건의 할 수 있어요!  ">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="9" name="NanumSquareRoundB"/>
+                                            <font key="NSFont" metaFont="miniSystem"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -524,7 +521,7 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0Y-yc-PRO">
-                                <rect key="frame" x="76" y="413" width="136" height="75"/>
+                                <rect key="frame" x="76" y="393" width="136" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="136" id="5yN-Qb-MfG"/>
                                     <constraint firstAttribute="height" constant="75" id="gD6-Pb-Hca"/>
@@ -537,7 +534,7 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
 필요한 장소만 지도에 표시 됩니다.</string>
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="9" name="NanumSquareRoundB"/>
+                                            <font key="NSFont" metaFont="miniSystem"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -632,11 +629,11 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
             <objects>
                 <viewController storyboardIdentifier="Phonebook" id="ym4-kv-wXx" customClass="PhonebookController" customModule="CampusMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VLH-KR-fr9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJR-fV-1rk">
-                                <rect key="frame" x="11" y="67" width="353" height="49"/>
+                                <rect key="frame" x="11" y="59" width="353" height="49"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfr-oD-2tW">
                                         <rect key="frame" x="8" y="12" width="25" height="26"/>
@@ -649,7 +646,6 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="소속 또는 이름을 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zsm-TD-Ag2">
                                         <rect key="frame" x="48" y="10" width="292" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="NanumSquareRoundB" family="NanumSquareRound" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -667,17 +663,17 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWk-q6-ZfG">
-                                <rect key="frame" x="0.0" y="121" width="375" height="3"/>
+                                <rect key="frame" x="0.0" y="113" width="375" height="3"/>
                                 <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="kA4-OQ-1uS"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Asb-C6-V7n">
-                                <rect key="frame" x="0.0" y="124" width="375" height="543"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="531"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="UKL-fn-lhv">
-                                    <rect key="frame" x="0.0" y="152" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="180" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
@@ -686,7 +682,7 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
                                         <rect key="frame" x="0.0" y="28" width="375" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w6j-AL-5Qk" id="gxu-aB-fHc">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="국어국문학과  l  인문학연구소장" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cp-gx-qzn">
@@ -718,7 +714,7 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
                                         <rect key="frame" x="0.0" y="90" width="375" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fYt-LA-dtt" id="YnC-zS-38z">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="201" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="정보기술대학" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PY7-OF-RsD">
@@ -772,11 +768,11 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
             <objects>
                 <viewController storyboardIdentifier="DetailPhonebook" id="Eff-4h-QRk" customClass="DetailPhonebookController" customModule="CampusMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LjB-gI-O8f">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bQ-zQ-vnc">
-                                <rect key="frame" x="11" y="67" width="353" height="49"/>
+                                <rect key="frame" x="11" y="59" width="353" height="49"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GsD-Q5-G02">
                                         <rect key="frame" x="11" y="12" width="15.5" height="26.5"/>
@@ -789,7 +785,6 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="소속 또는 이름을 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="igY-H4-6h5">
                                         <rect key="frame" x="48" y="10" width="292" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="NanumSquareRoundB" family="NanumSquareRound" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -807,17 +802,17 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jmr-2Y-NFn">
-                                <rect key="frame" x="0.0" y="121" width="375" height="3"/>
+                                <rect key="frame" x="0.0" y="113" width="375" height="3"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="bgq-8l-ESA"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2FT-y0-zN7">
-                                <rect key="frame" x="0.0" y="124" width="375" height="543"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="531"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="33Y-Zd-h2J">
-                                    <rect key="frame" x="0.0" y="90" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="118" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
@@ -826,7 +821,7 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
                                         <rect key="frame" x="0.0" y="28" width="375" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X6B-Qk-BUN" id="gd6-7G-zap">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQS-AY-KKR">
@@ -890,7 +885,7 @@ MAP과 CAMPUS라는 단어를 합쳐 탄생한 MAPUS는 길을 찾는 당신에�
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O7f-bS-s0u" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eMd-QN-ohg">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
